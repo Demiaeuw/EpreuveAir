@@ -1,6 +1,8 @@
 # Epreuve Eau 
 
-Ici ce sont les resultats de l'epreuve de l'air de CodingAccelerator  en python  sur VScode
+Ici ce sont les resultats de l'epreuve de l'air de CodingAccelerator  
+en python  
+sur VScode
 
 00 Split  
 01 Split en fonction  
