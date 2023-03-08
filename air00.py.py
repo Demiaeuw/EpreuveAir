@@ -8,3 +8,26 @@ ma_fonction(string_à_couper, string_séparateur) { // syntaxe selon votre langa
 }"""
 
 
+import sys 
+
+argument = sys.argv[1:]
+
+liste = []
+
+def separateur(argument):
+    if len(argument) < 1:
+        print("Error")
+    elif len(argument) == 1:
+        for element in argument:
+            sous_chaines = element.split()
+            liste.append(sous_chaines)
+    else:
+        for arg in argument:
+            sous_chaines = arg.split()
+            liste.append(sous_chaines)
+            
+separateur(argument)
+
+for element in liste:
+    for sous_chaine in element:
+        print(sous_chaine)
