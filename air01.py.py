@@ -7,3 +7,12 @@ ma_fonction(string_à_couper, string_séparateur) { // syntaxe selon votre langa
 	return (tableau)
 }"""
 
+import sys
+
+phrase = sys.argv[1]
+separateur = sys.argv[2]
+
+def sparateur():
+    if len(argumentstest) != 2:
+    	print("entrer 2 arguments")
+    elif separateur in phrase:
