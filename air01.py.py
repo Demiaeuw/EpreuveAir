@@ -9,10 +9,10 @@ ma_fonction(string_à_couper, string_séparateur) { // syntaxe selon votre langa
 
 import sys
 
+arguments = sys.argv[1:]
 phrase = sys.argv[1]
 separateur = sys.argv[2]
 
-def sparateur():
-    if len(argumentstest) != 2:
+def Gestion_erreur():
+    if len(arguments) != 2:
     	print("entrer 2 arguments")
-    elif separateur in phrase:
