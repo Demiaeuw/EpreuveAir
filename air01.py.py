@@ -13,6 +13,22 @@ arguments = sys.argv[1:]
 phrase = sys.argv[1]
 separateur = sys.argv[2]
 
-def Gestion_erreur():
+def Separation(a, b):
+    if b in a:
+        phraseUn = a[:a.index(b)]
+        phraseDeux = a[a.index(b) + len(b):]
+        return [phraseUn, phraseDeux]
+    else:
+        return []
+
+try:
     if len(arguments) != 2:
-    	print("entrer 2 arguments")
+    	print("Entrer 2 arguments")
+    else:
+        result = Separation(phrase, separateur)
+        if result:
+            print(result[0], "\n", result[1])
+        else:
+            print("Le séparateur n'a pas été trouvé dans la phrase.")
+except ValueError:
+    print("Error")
